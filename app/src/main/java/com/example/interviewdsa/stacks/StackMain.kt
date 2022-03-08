@@ -41,4 +41,8 @@ fun useStackOf() {
     val stack = stackOf("D", "C", "B", "A")
     println(stack)
     println("Popped: ${stack.pop()}")
+    println("Popped: ${stack.pop()}")
+    println("Popped: ${stack.pop()}")
+    println("Popped: ${stack.pop()}")
+    println("Popped: ${stack.pop()}")
 }

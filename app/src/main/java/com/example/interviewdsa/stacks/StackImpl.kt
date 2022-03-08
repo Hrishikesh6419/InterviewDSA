@@ -31,7 +31,7 @@ class StackImpl<T: Any>: Stack<T> {
     }
 
     override fun pop(): T? {
-        if (storage.size == 0) {
+        if (isEmpty) {
             return null
         }
         return storage.removeAt(storage.size - 1)
@@ -41,10 +41,7 @@ class StackImpl<T: Any>: Stack<T> {
         get() = storage.size
 
     override fun peek(): T? {
-        if (isEmpty) {
-            return null
-        }
-        return storage.removeAt(count - 1)
+        return storage.lastOrNull()
     }
 
 
